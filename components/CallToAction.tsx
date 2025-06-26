@@ -285,7 +285,7 @@ export default function CallToAction() {
                 <div className='border-t pt-6'>
                   <h5 className='mb-2 font-semibold'>Email</h5>
                   <p className='text-sm text-gray-600'>
-                    puleng@ubutuafrican.co.za
+                    puleng@ubuntuafrican.co.za
                   </p>
                 </div>
               </CardContent>
