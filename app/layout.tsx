@@ -1,19 +1,15 @@
 import type React from 'react';
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
 import './globals.css';
-import { Inter, Merriweather } from 'next/font/google';
-import { ToastProvider } from '@/components/ui/toast';
+import { ThemeProvider } from '@/components/theme-provider';
+import { Toaster } from '@/components/ui/toaster';
 
-const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
-const merriweather = Merriweather({
-  weight: ['300', '400', '700', '900'],
-  subsets: ['latin'],
-  variable: '--font-merriweather',
-});
+const inter = Inter({ subsets: ['latin'] });
 
-export const metadata = {
-  title: 'Ubuntu African Resources - Sustainable Mineral Trading',
-  description:
-    'Ubuntu African Resources is a leading commodity trading company specializing in minerals, connecting industries with essential energy and industrial minerals through responsible and efficient trade.',
+export const metadata: Metadata = {
+  title: 'Ubuntu African Resources',
+  description: 'Leading mineral trading company in Africa',
 };
 
 export default function RootLayout({
@@ -23,8 +19,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className={`${inter.variable} ${merriweather.variable} font-sans`}>
-        <ToastProvider>{children}</ToastProvider>
+      <body className={inter.className}>
+        <ThemeProvider
+          attribute='class'
+          defaultTheme='light'
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+          <Toaster />
+        </ThemeProvider>
       </body>
     </html>
   );

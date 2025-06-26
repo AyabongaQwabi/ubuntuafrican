@@ -12,7 +12,7 @@ const navItems = [
   { href: '/#about', label: 'About' },
   { href: '/#commodities', label: 'Commodities' },
   { href: '/#how-we-work', label: 'How We Work' },
-  { href: '/contact', label: 'Contact' },
+  { href: '/#contact', label: 'Contact' },
 ];
 
 export default function Navbar() {
