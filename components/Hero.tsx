@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 export default function Hero() {
   return (
@@ -41,14 +42,16 @@ export default function Hero() {
           We connect industries with essential energy and industrial minerals
           through responsible and efficient trade.
         </motion.p>
-        <motion.button
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          className='rounded bg-orange-600 px-8 py-3 font-semibold text-white transition-colors hover:bg-orange-700'
-        >
-          Learn More
-        </motion.button>
+        <Link href='#about'>
+          <motion.button
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+            className='rounded bg-orange-600 px-8 py-3 font-semibold text-white transition-colors hover:bg-orange-700'
+          >
+            Learn More
+          </motion.button>
+        </Link>
       </div>
     </section>
   );
