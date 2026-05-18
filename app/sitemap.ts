@@ -7,7 +7,7 @@ export default async function sitemap() {
       priority: 1,
     },
     {
-      url: 'https://ubuntu african.qwabi.co.za/about-developer',
+      url: 'https://ubuntuafrican.qwabi.co.za/about-developer',
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 1,
