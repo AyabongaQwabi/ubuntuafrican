@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ubuntuafrican.qwabi.co.za/sitemap.xml

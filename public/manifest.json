@@ -1,0 +1,30 @@
+{
+  "name": "Ubuntu African Resources",
+  "short_name": "Ubuntu",
+  "description": "Ubuntu African Resources is a South African mineral trading company focused on sustainable commodities and global trade.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#111827",
+  "lang": "en-ZA",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Contact",
+      "url": "/contact",
+      "description": "Contact Ubuntu African Resources"
+    },
+    {
+      "name": "About the developer",
+      "url": "/about-developer",
+      "description": "Learn about Ayabonga Qwabi"
+    }
+  ]
+}
